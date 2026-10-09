@@ -19,6 +19,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         runLab1() // запускаем код лабы, чтобы результаты вывелись в Logcat
+        runLab2()
+        runLab3()
         setContent {
             Mylab1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
@@ -364,6 +366,6 @@ fun runLab2() {
     var avgGrade = grades.values.average() // берём только оценки (values) и считаем среднее
     println("M10. Average grade = $avgGrade")
 }
- 
+
 
 
